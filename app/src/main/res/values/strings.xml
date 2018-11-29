@@ -8,4 +8,5 @@
     <string name="signin">Sign In</string>
     <string name="createAccount">Create Account</string>
     <string name="troubleSignIn">Problems Signing In?</string>
+    <string name="forgotPassword">Forgot Password?</string>
 </resources>
