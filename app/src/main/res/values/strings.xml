@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Senior_design</string>
+    <string name="app_name">Balance</string>
     <string name="hello">Hello, World!</string>
     <string name="tasks">Task List</string>
     <string name="welcome">Welcome To Balance</string>

@@ -18,7 +18,7 @@ public class WelcomePage extends AppCompatActivity {
         final Button button = findViewById(R.id.welcome_button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(WelcomePage.this, MainActivity.class));
+                startActivity(new Intent(WelcomePage.this, SignInPage.class));
             }
         });
     }
