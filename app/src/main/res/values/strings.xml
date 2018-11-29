@@ -5,4 +5,7 @@
     <string name="welcome">Welcome To Balance</string>
     <string name="startingbutton">Get Started</string>
     <string name="firstText">Our mission is to help you destress and strike a balance between work and play</string>
+    <string name="signin">Sign In</string>
+    <string name="createAccount">Create Account</string>
+    <string name="troubleSignIn">Problems Signing In?</string>
 </resources>
