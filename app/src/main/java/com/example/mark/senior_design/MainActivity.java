@@ -11,10 +11,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    //ListView lv = (ListView) findViewById(R.id.listview);
-    //ArrayList<String> arrayList = new ArrayList<String>();
-    //int taskNumber = 0;
+    private ArrayList<String> arrayList;
+    private ArrayAdapter<String> AA;
+    private int taskNumber;
 
 
     @Override
@@ -22,39 +21,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        taskNumber = 0;
+
 
         ListView lv = (ListView) findViewById(R.id.listview);
-        ArrayList<String> arrayList = new ArrayList<String>();
-        ArrayAdapter AA = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
+        arrayList = new ArrayList<String>();
+        AA = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
+        lv.setAdapter(AA);
 
         arrayList.add("Study Science");
         arrayList.add("Learn to Play the Piano");
         arrayList.add("Read new book");
 
-        lv.setAdapter(AA);
 
-        /*Button button = findViewById(R.id.add_task_button);
+
+        Button button = findViewById(R.id.add_task_button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //arrayList.add("Task" + taskNumber.toString());
-                //taskNumber++;
-                //lv.setAdapter(AA);
+                arrayList.add("Task" + taskNumber);
+                taskNumber++;
+                AA.notifyDataSetChanged();
             }
-        });*/
+        });
 
-
-        //ArrayAdapter AA = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
 
     }
 
-
-    //public void addTask(View view){
-        //ArrayAdapter AA = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
-
-        //arrayList.add("Task" + taskNumber);
-        //taskNumber++;
-        //lv.setAdapter(AA);
-    //}
 
 
 }
