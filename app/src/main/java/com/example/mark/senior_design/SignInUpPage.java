@@ -17,7 +17,7 @@ public class SignInUpPage extends AppCompatActivity {
             }
         });
         final Button signUpButton = findViewById(R.id.signup);
-        signInButton.setOnClickListener(new View.OnClickListener() {
+        signUpButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SignInUpPage.this, SignUp.class));
             }
