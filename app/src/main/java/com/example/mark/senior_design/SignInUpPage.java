@@ -22,6 +22,15 @@ public class SignInUpPage extends AppCompatActivity {
                 startActivity(new Intent(SignInUpPage.this, SignUp.class));
             }
         });
+
+        final Button debugButton = findViewById(R.id.debugButton);
+        debugButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                startActivity(new Intent(SignInUpPage.this, MainActivity.class));
+            }
+
+        });
     }
 }
 
